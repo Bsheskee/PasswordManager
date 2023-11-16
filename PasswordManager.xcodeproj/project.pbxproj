@@ -8,11 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		CE0F3DA92B0660A1005F9C14 /* PasswordManager.h in Headers */ = {isa = PBXBuildFile; fileRef = CE0F3DA82B0660A1005F9C14 /* PasswordManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CE0F3DB02B0660B8005F9C14 /* PasswordManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0F3DAF2B0660B8005F9C14 /* PasswordManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		CE0F3DA52B0660A1005F9C14 /* PasswordManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PasswordManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE0F3DA82B0660A1005F9C14 /* PasswordManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PasswordManager.h; sourceTree = "<group>"; };
+		CE0F3DAF2B0660B8005F9C14 /* PasswordManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +31,7 @@
 		CE0F3D9B2B0660A1005F9C14 = {
 			isa = PBXGroup;
 			children = (
+				CE0F3DAF2B0660B8005F9C14 /* PasswordManager.swift */,
 				CE0F3DA72B0660A1005F9C14 /* PasswordManager */,
 				CE0F3DA62B0660A1005F9C14 /* Products */,
 			);
@@ -93,6 +96,7 @@
 				TargetAttributes = {
 					CE0F3DA42B0660A1005F9C14 = {
 						CreatedOnToolsVersion = 14.2;
+						LastSwiftMigration = 1420;
 					};
 				};
 			};
@@ -129,6 +133,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE0F3DB02B0660B8005F9C14 /* PasswordManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,6 +263,7 @@
 		CE0F3DAD2B0660A1005F9C14 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -278,6 +284,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -286,6 +293,7 @@
 		CE0F3DAE2B0660A1005F9C14 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
